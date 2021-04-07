@@ -1,0 +1,470 @@
+
+body {
+    margin: 0px;
+    font-family: 'Averia Serif Libre', cursive;
+}
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: url(images/nasa-Q1p7bh3SHj8-unsplash.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.top-box {
+    padding: 38px;
+    background-image:url(images/anthony-indraus-Bb9jWuTMPUk-unsplash.jpg);
+    background-color: #cccccc;
+    background-size: cover;
+    background-position:center;
+}
+
+.top-box:hover .nav {
+    opacity: 1;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.8;
+    transition: 2s;
+}
+@media(max-width:600px) {
+    .nav {
+        flex-direction: column;
+    }
+
+}
+
+.logo {
+    padding-left: 15px;
+    opacity: 0.5;
+}
+.left {
+    margin-left: 70px;
+    display: flex;
+}
+@media(max-width:600px){
+    .left {
+        margin-left: 0;
+        flex-direction: column;
+    }
+}
+.nav-link {
+    padding: 10px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    height: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+@media(max-width:600px) {
+    .nav-link {
+        background-color: black;
+        margin: 2% 0;
+    }
+}
+.nav-link-active {
+    padding: 10px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    height: 20px;
+    border-radius: 10px;
+}
+@media(max-width:600px) {
+    .nav-link-active {
+        background-color: gray;
+    }
+}
+.nav-link a {
+    color: silver;
+    text-decoration: none;
+    transition: color 1s;
+    transition: font-size 1s;
+}
+.nav-link-active a {
+    color: silver;
+    text-decoration: none;
+    transition: color 1s;
+    transition: font-size 1s;
+    border: 1px solid coral;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.nav-link:hover {
+    border-bottom: 1px solid coral;
+}
+.nav-link-active:hover {
+    border-bottom: 1px solid coral;
+}
+.nav-link a:hover {
+    color: red;
+    font-size: 1.5em;
+}
+.nav-link-active a:hover {
+    color: red;
+    font-size: 1.5em;
+}
+.right {
+    font-size: 2em;
+}
+.right p {
+    padding-top: 30px;
+    padding-left: 110px;
+    padding-bottom: 0;
+}
+@media(max-width:600px) {
+    .right p {
+        padding-left: 0;
+    }
+}
+.brend {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    position: fixed;
+    top: 0;
+}
+@media(max-width:600px){
+    .brend {
+        position: relative;
+        flex-direction: column;
+    }
+}
+
+.brend-text {
+    padding-top: 20px;
+}
+
+.right p {
+    font-weight: 700;
+    font-size: 0.5em;
+    margin: 0px;
+    color: black;
+}
+.items a {
+    text-decoration: none;
+}
+.H1, .H3, .H5 {
+    text-decoration: none;
+    color: black;
+    font-size: 5em;
+    transition: 1s;
+}
+.H2, .H4, .H6 {
+    text-decoration: none;
+    color: white;
+    font-size: 5em;
+    transition: 1s;
+}
+.item1-text, .item2-text, .item3-text, .item4-text, .item5-text, .item6-text {
+    font-weight: 600;
+    color: transparent;
+    padding: 150px 0;
+    transition: 1s;
+}
+.item1, .item2, .item3, .item4, .item5, .item6, .item6-1 {
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 2s;
+    opacity: 0.5;
+    border-radius: 30px;
+    margin: 10px;
+    box-shadow: 5px 10px 8px black;
+    transition: 2s;
+    overflow: hidden;
+    z-index: 1;
+}
+@media(max-width:600px) {
+    .item1, .item2, .item3, .item4, .item5, .item6 {
+        flex-direction: column;
+    }
+
+}
+.item1 {
+    background-image: url(images/shirish-suwal-ctmuaOO-JJI-unsplash.jpg);
+}
+.item1:hover, .item3:hover, .item5:hover, .item2:hover, .item4:hover, .item6:hover {
+    background: transparent;
+    box-shadow: 5px 10px 8px coral;
+    overflow: visible;
+    opacity: 1;
+    z-index: 2;
+}
+
+.item1:hover .item1-text, .item2:hover .item2-text,.item3:hover .item3-text, .item4:hover .item4-text, .item5:hover .item5-text, .item6:hover .item6-text {
+    font-weight: 600;
+    color: white;
+    font-size: 2em;
+}
+.item1:hover .H1, .item2:hover .H2, .item3:hover .H3, .item4:hover .H4, .item5:hover .H5, .item6:hover .H6 {
+    color: transparent;
+}
+
+.item2 {
+    background-image: url(images/steve-johnson-hokONTrHIAQ-unsplash.jpg);
+}
+
+.item3 {
+    background-image: url(images/243bbc708378b68024351b9d9e5f72d6.jpg);
+}
+
+.item4 {
+    background-image: url(images/tem.jpg);
+}
+
+.item5 {
+    background-image: url(images/schnider.jpg);
+}
+
+.item6 {
+    background-image: url(images/eti.jpg);
+}
+.item6-1 {
+    background-image: url(images/eti.jpg);
+    transition: all 1s ease;
+}
+
+.itemM {
+    display: flex;
+    justify-content: space-between;
+    transition: 2s;
+    position: relative;
+    border-radius: 30px;
+    margin: 10px;
+    box-shadow: 5px 10px 8px black;
+}
+@media(max-width:600px) {
+    .itemM {
+        display: none;
+    }
+
+}
+.itemM:hover {
+    box-shadow: 5px 10px 8px coral;
+    background: transparent;
+}
+
+.itemM:hover .itemM1, .itemM:hover .itemM2 {
+    opacity: 1;
+}
+
+.itemM:hover .itemM-text {
+    color: transparent;
+}
+.itemM-text {
+    color:black;
+    font-size: 5em;
+    font-weight: 700;
+    transition: 2s;
+    padding-left: 40%;
+    overflow: hidden;
+}
+.itemM1 {
+    position: absolute;
+}
+
+.itemM1, .itemM2 {
+    padding-right: 0%;
+    opacity: 0.2;
+    transition: 2s;
+}
+.itemM1:hover {
+    padding-left: 25%;
+    padding-right: 0%;
+}
+
+.itemM2:hover {
+    padding-left: 0;
+    padding-right: 25%;
+}
+
+.bottom-box {
+    font-style: italic;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+    padding: 38px;
+    background-image:url(images/anthony-indraus-Bb9jWuTMPUk-unsplash.jpg);
+    background-color: #cccccc;
+    background-size: cover;
+    background-position:center;
+    cursor: url(images/imageedit_3_85908703291.png), pointer;
+}
+@media(max-width:600px) {
+    .bottom-box {
+        grid-template-columns: 1fr;
+        cursor: auto;
+    }
+
+}
+.brend-text-b {
+    font-size: 2em;
+    font-weight: 700;
+    color: white;
+    height: 20%;
+}
+
+.bottom-box:hover .logo-b  {
+    opacity: 0;
+}
+@media(max-width:600px){
+    .bottom-box:hover .logo-b  {
+        opacity: 1;
+    }
+}
+.bottom-box a:hover {
+    color: red;
+    border-bottom: 1px solid coral;
+    font-size: 1.5em;
+}
+
+.right-bottom {
+    width: 100%;
+}
+.contact-text {
+    float: right;
+    display: flex;
+}
+@media(max-width:600px) {
+    .contact-text {
+        flex-direction: column;
+        float: left;
+    }
+
+}
+.contact-text div{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1em;
+}
+.contact-text p {
+    font-weight: 500;
+    font-size:0.8em;
+}
+.contact-text a {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    transition: 1s;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.about:hover {
+    opacity: 1.0;
+}
+
+h3 {
+    color: white;
+    margin: 0 40%;
+    font-size: 1.5em;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/diego-ph-5LOhydOtTKU-unsplash.jpg);
+    background-position: center;
+    width: 50%;
+    margin: 2% 25% ;
+    border-radius: 30px;
+    color: white;
+    opacity: 0.5;
+    transition: 2s;
+}
+@media(max-width:600px) {
+    .contact-form {
+        flex-direction: column;
+        width: 100%;
+        margin: 2% 0;
+    }
+}
+.contact-form:hover{
+    opacity: 0.8;
+    box-shadow: 0 0 10px;
+}
+.input-fields {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding: 10px;
+    width: 55%;
+}
+.input-fields label {
+    margin-top: 10px;
+}
+.input-fields .input {
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid black;
+    color: white;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+.msg {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 50px;
+    width: 48%;
+    align-items: center;
+}
+.msg textarea {
+    margin-right: 2%;
+    padding: 0;
+    background: transparent;
+    color: white;
+    height: 300px;
+}
+
+.msg input {
+    background: transparent;
+    color: white;
+    margin-right: 2%;
+}
+
+.msg label {
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    font-weight: 600;
+    color: transparent;
+    padding: 10px;
+    background: coral;
+    text-align: center;
+    border-radius: 10px;
+    margin: 2% 25%;
+    cursor: pointer;
+    transition: 1s;
+    border-color: black;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    color: red;
+    font-size: 1.5em;
+    opacity: 1;
+}
